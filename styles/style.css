@@ -53,9 +53,12 @@ button {
 .feed .tab [type=radio] {
     display: none;   
 }
+.feed .active--tab {
+    border-bottom: .125rem solid blue;
+}
 .content {
     position: absolute;
-    top: 3.5rem;
+    top: 4rem;
     left: 0;
     right: 0;
     padding: 1.5rem;
@@ -65,17 +68,16 @@ button {
 .user__info {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .user__activity:not(:first-child) {
     margin: 1.5rem 0;
-} 
-.user__info .avatar {
-    margin-right: .75rem;
 }
 .user__actvity__details {
     flex: auto;
     font-size: .875rem;
     color: #c4c4c4;
+    margin-left: .75rem;
 }
 .user__actvity__details strong {
     color: #000;
@@ -105,6 +107,12 @@ button {
 }
 .file--icon .fa-file-pdf {
     color: #ff0000;
+}
+.file--icon .fa-file-word {
+    color: #0559FD;
+}
+.file--icon .fa-file-excel {
+    color: #03791f;
 }
 .user__files .file {
     margin-bottom: .5rem;
